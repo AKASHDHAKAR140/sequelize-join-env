@@ -4,7 +4,7 @@ const db = require("../../db")
 
 const postdata = async (req, res) => {
     const postData = req.body;
-    console.log(postData, "!!!!!!!!!!!!!!!!!")
+   // console.log(postData, "!!!!!!!!!!!!!!!!!")
     try {
         const addingData = await db.Model.create(postData);
         const insertData = await addingData.save();
