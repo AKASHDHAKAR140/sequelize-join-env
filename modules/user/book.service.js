@@ -16,9 +16,10 @@ const postdata = async (req, res) => {
 }
 const getdata = async (req, res,id) => {
     try {
-        const addingData = await db.Model.findAndCountAll({
+        const addingData = await db.Model.findAndCountAll({limit:3,offset:0,
           //  where: { id:id},
             include: [db.Model1],
+            attributes:["name","title"]
           });
 
         res.status(200).json(addingData)

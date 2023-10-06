@@ -22,8 +22,8 @@ async function initialize() {
     
     db.sequelize = sequelize;
 
-    db.Model = require("./modules/book/book.model")(sequelize)
-    db.Model1 = require("./modules/review/review.model")(sequelize)
+    db.Model = require("./modules/user/book.model")(sequelize)
+    db.Model1 = require("./modules/admin/review.model")(sequelize)
     
     
     // db.Model.hasMany(db.Model1);

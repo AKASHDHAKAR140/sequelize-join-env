@@ -11,5 +11,5 @@ app.use(require("./routers"))
 const dotenv = require('dotenv');
 dotenv.config();
 app.listen(3001,(req,res)=>{
-    console.log("server listening port no 3000")
+    console.log("server listening port no 3001")
 })
